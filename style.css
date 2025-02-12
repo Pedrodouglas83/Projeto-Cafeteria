@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Danfo:ELSH@0..100&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&family=PT+Sans&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
 :root {
-  --main-colo: #d3ad7f; 
+  --main-colo: #d4ae80; 
   --black: #13131a;  
   --bg: #010103; 
   --border: 0.2rem solid rgba(255, 255, 255, 0.3); 
@@ -42,16 +42,14 @@ body {
       align-items: center;
       justify-content: space-between;
       padding-top: 1.5rem;
-      padding-bottom: 1.5rem; 
-     
+      padding-bottom: 1.5rem;      
 }
 
 section {
     padding: 3rem 2rem;
     margin: 0 auto;
     max-width: 1200px; /* ele diminue a largura do site, quando voçe 
-                            deseja a um espaço nas laterais */
-
+                          deseja a um espaço nas laterais */
 }
 
 .nav-bar a {
@@ -94,12 +92,9 @@ section {
   align-items: center;
   height: 100vh; 
 
-}   
-
-
+} 
 .content {
   max-width: 60rem;
-
 }
 
 .content h3 {
@@ -269,4 +264,60 @@ section {
 
 .footer .share img:hover {
    background-color: var(--main-colo);
+}
+
+/* Responsividade */
+
+@media screen and (max-width: 650px) {
+   .nav-bar, .icons {
+      display: none;
+   }
+   
+   .container-img {
+     display: none;
+   }
+ 
+ .content h3 {
+   font-size: 30px;
+   text-align: center;
+ }
+
+ .content p {
+   
+   font-size: 2rem;   
+   font-weight: 100;   /* a grossura  da fonte  */ 
+   line-height: 1.8; /* altura das linhas  */ 
+   padding: 1rem 0;
+   
+ }
+ 
+ .btn {
+   padding: 1rem 1rem;
+   font-size: 1.7rem;
+   margin: 1.4rem;
+   justify-items: center;
+   
+}
+
+.addrees iframe {
+   width: 32rem;
+}
+
+.logo {
+   margin: auto;
+}
+
+.logo img:hover {
+   transform: scale(1.1);
+}
+
+.footer .share img {
+   margin: 0.3rem;
+   cursor: pointer;
+   border-radius: 50%;
+   padding: 1rem;
+}
+
+
+
 }
